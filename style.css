@@ -9,6 +9,10 @@ th{
 h4{
     text-align:left;    
 }
+h2{
+    font-family: Karla !important;
+    
+}
 .headline{
 display: flex;
 flex-direction: column;
@@ -22,8 +26,8 @@ width: 500px !important;
 }
 body{
     font-family:Montserrat ;
-    background-color: rgba(0, 0, 0, 0.07);
-    overflow: hidden;
+    background-color: #e8e8e8;
+    
 }
 .table1{
     background-color: var(--table-bg);
@@ -57,13 +61,16 @@ td{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    
+}
+.topDetails p{
+    font-size: 18px;
 }
 .leaderboard{
     border-radius: 25px;
 }
 .topSeller{
-    background-color: white;
+    background:  #423629;;
+    color: white;
     margin-top:10px ;
 }
 .topDetails p{
@@ -71,4 +78,14 @@ td{
 }
 .bookings{
     text-align: center !important;
+}
+.Heading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.Heading P{
+    font-size: 50px !important;
+    font-family: Karla !important;
 }
