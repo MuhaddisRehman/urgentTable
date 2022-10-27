@@ -5,11 +5,12 @@
 }
 th{
     font-size: 18px;
+    font-family: Karla !important;
 }
 h4{
     text-align:left;    
 }
-h2{
+h1{
     font-family: Karla !important;
     
 }
