@@ -25,25 +25,24 @@ body{
     background-color: rgba(0, 0, 0, 0.07);
     overflow: hidden;
 }
-table{
+.table1{
     background-color: var(--table-bg);
-    border-radius: 25px;
-    border: none !important;
+    margin-top: 10px;
 }
 .top-bg{
     background-color: #DB5F12;
-    border-radius: 15px;
+    
     display: flex;
     margin-bottom: 10px;
     color: white;
-    margin:10px 0px;
-    margin-top: 0px;
+    
 }
 td{
     font-size: 16px;
     font-weight: 600;
-    color: rgba(0, 0, 0, 0.5);
+    color: rgba(0, 0, 0, 0.6);
     border-right-style: dashed !important;
+    border-right-color: rgba(0, 0, 0, 0.1);
 }
 .topImg{
     display: flex;
@@ -64,12 +63,12 @@ td{
     border-radius: 25px;
 }
 .topSeller{
-    background-color: #60d34f;
-    color: white;
-    border-radius: 15px ;
-    padding: 10px 25px;
-    margin:10px 0px;
+    background-color: white;
+    
 }
 .topDetails p{
     font-size: 32px ;
+}
+.bookings{
+    text-align: center !important;
 }
