@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -13,399 +14,345 @@
     <title>Bookings Table</title>
 </head>
 <style>
-    th{
-        font-size: 24px;
-    }
-    h4{
-        text-align:left;
-        
-        padding-left:10px ;
-    }
-    .headline{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    justify-content: center;
-    text-align: right;
-    width: 500px !important;
-    }
-    :root{
-        --table-bg:white
-    }
-    body{
-        font-family:Montserrat ;
-        background-color: rgba(0, 0, 0, 0.1);
-    }
-    table{
-        background-color: var(--table-bg);
-        border-radius: 20px;
-        
-    }
-    .top-bg{
-        background-color: #DB5F12;
-        border-radius: 15px ;
-        display: flex;
-        margin-bottom: 10px;
-        color: white;
-    }
-    td{
-        font-size: 18px;
-        font-weight: 600;
-        color: rgba(0, 0, 0, 0.5);
-        
-    }
-    .topNav{
-        background-color: #031420;
-        
-    }
+
 </style>
+
 <body>
-    
+
     <div class="container-fluid  topWidth">
-        
-        <div class=" row   px-5 top-bg " >
-            <div class="col-1 ">
+
+        <div class=" row   px-5 top-bg ">
+            <div class="col-6 ">
                 <img src="assets/changedLogo.png" alt="sufi logo" height="170px">
             </div>
-                <div class="headline col-5 " >
-                    <h4 class="">Previous Month Bookings: 120 </h4> 
-                    <h4 class="">Current Month Bookings:  50</h4> 
-                </div>
-                <div class="col-5 p-3">
-                    <h3>Top Seller</h3>
-                    <h4>Agent Name</h4>
-                </div>
-                <div class="ml-auto col-1 p-4"><img class="rounded-circle"src="assets/pfp.jpg" height="120px" alt=""></div>
+            <div class="headline col-6 ">
+                <h4 class="">Total Monthly Bookings: 120</h4>
+                <h4 class="">Today's Total Bookings: 12 </h4>
+            </div>
         </div>
-        <div class="row">
+        <div class="row topSeller">
+            <div class="col-5 topDetails ">
+                <h1>Top Seller</h1>
+                <h3>Mark Robin</h3>
+                <h3>27</h3>
+            </div>
+            <div class="ml-auto col-1 topImg">
+                <img class="rounded-circle" src="assets/pfp.jpg" height="150px" alt="">
+            </div>
+        </div>
+        <div class="row leaderboard">
             <div class="col-sm">
-                <table class="table table-hover table-sm  table-bordered ">
-                <thead>
-                    <tr>
-                    <th>S.no.</th>
-                    <th style="width: 300px;">Agent Name</th>
-                    <th>Daily Booking</th>
-                    <th>Accumulative Booking</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>1</td>
-                        <td><img class="rounded-bottom rounded"src="assets/user.png" width="30px" alt=""> John</td>
-                        <td>4</td>
-                        <td>15</td>
-                    </tr>
-                        <td>2</td>
-                        <td><img class="rounded-bottom rounded"src="assets/user.png" width="30px" alt="">  Billy</td>
-                        <td>2</td>
-                        <td>13</td>
-                    </tr>
-                    <tr>
-                        <td>3</td>
-                        <td><img class="rounded-bottom rounded"src="assets/user.png"width="30px" alt=""> Tony</td>
-                        <td>3</td>
-                        <td>9</td>
-                    </tr>
-                    <tr>
-                        <td>4</td>
-                        <td><img class="rounded-bottom rounded"src="assets/user.png"width="30px" alt=""> Rohit</td>
-                        <td>4</td>
-                        <td>7</td>
-                    </tr>
-                    <tr>
-                        <td>5</td>
-                        <td><img class="rounded-bottom rounded"src="assets/user.png"width="30px" alt=""> Ali</td>
-                        <td>1</td>
-                        <td>5</td>
-                    </tr>
-                    <tr>
-                        <td>6</td>
-                        <td><img class="rounded-bottom rounded"src="assets/user.png"width="30px" alt=""> Dwayne</td>
-                        <td>0</td>
-                        <td>3</td>
-                    </tr>
-                    <tr>
-                        <td>7</td>
-                        <td><img class="rounded-bottom rounded"src="assets/user.png"width="30px" alt=""> Rohn</td>
-                        <td>8</td>
-                        <td>19</td>
+                <table class="table table-hover table-sm table-bordered ">
+                    <thead>
+                        <tr>
+                            <th>S.no.</th>
+                            <th style="width: 300px;">Agent Name</th>
+                            <th>Daily Booking</th>
+                            <th>Total Booking</th>
                         </tr>
-                    <tr>
-                    <tr>
-                        <td>8</td>
-                        <td><img class="rounded-bottom rounded"src="assets/user.png"width="30px" alt=""> Adam</td>
-                        <td>6</td>
-                        <td>17</td>
-                    </tr>
-                    <tr>
-                        <td>9</td>
-                        <td><img class="rounded-bottom rounded"src="assets/user.png"width="30px" alt=""> John</td>
-                        <td>4</td>
-                        <td>15</td>
-                    </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td><img class="rounded-bottom rounded" src="assets/pfp7.jpg" width="30px" alt=""> John</td>
+                            <td>4</td>
+                            <td>15</td>
+                        </tr>
+                        <td>2</td>
+                        <td><img class="rounded-bottom rounded" src="assets/pfp3.jpg" width="30px" alt=""> Billy</td>
+                        <td>2</td>
+                        <td>13</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td><img class="rounded-bottom rounded" src="assets/pfp4.jpg" width="30px" alt=""> Tony</td>
+                            <td>3</td>
+                            <td>9</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td><img class="rounded-bottom rounded" src="assets/pfp5.jpg" width="30px" alt=""> Rohit</td>
+                            <td>4</td>
+                            <td>7</td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td><img class="rounded-bottom rounded" src="assets/pfp6.jpg" width="30px" alt=""> Ali</td>
+                            <td>1</td>
+                            <td>5</td>
+                        </tr>
+                        <tr>
+                            <td>6</td>
+                            <td><img class="rounded-bottom rounded" src="assets/pfp7.jpg" width="30px" alt=""> Dwayne</td>
+                            <td>0</td>
+                            <td>3</td>
+                        </tr>
+                        <tr>
+                            <td>7</td>
+                            <td><img class="rounded-bottom rounded" src="assets/pfp8.jpg" width="30px" alt=""> Rohn</td>
+                            <td>8</td>
+                            <td>19</td>
+                        </tr>
+                        <tr>
+                        <tr>
+                            <td>8</td>
+                            <td><img class="rounded-bottom rounded" src="assets/pfp9.jpg" width="30px" alt=""> Adam</td>
+                            <td>6</td>
+                            <td>17</td>
+                        </tr>
+                        <tr>
+                            <td>9</td>
+                            <td><img class="rounded-bottom rounded" src="assets/pfp1.jpg" width="30px" alt=""> John</td>
+                            <td>4</td>
+                            <td>15</td>
+                        </tr>
                         <td>10</td>
-                        <td><img class="rounded-bottom rounded"src="assets/user.png"width="30px" alt=""> Billy</td>
+                        <td><img class="rounded-bottom rounded" src="assets/pfp3.jpg" width="30px" alt=""> Billy</td>
                         <td>2</td>
                         <td>13</td>
-                    </tr>
-                    <tr>
-                        <td>11</td>
-                        <td><img class="rounded-bottom rounded"src="assets/user.png"width="30px" alt=""> Tony</td>
-                        <td>3</td>
-                        <td>9</td>
-                    </tr>
-                    <tr>
-                        <td>12</td>
-                        <td><img class="rounded-bottom rounded"src="assets/user.png"width="30px" alt=""> Rohit</td>
-                        <td>4</td>
-                        <td>7</td>
-                    </tr>
-                    <tr>
-                        <td>13</td>
-                        <td><img class="rounded-bottom rounded"src="assets/user.png"width="30px" alt=""> Ali</td>
-                        <td>1</td>
-                        <td>5</td>
-                    </tr>
-                    <tr>
-                        <td>14</td>
-                        <td><img class="rounded-bottom rounded"src="assets/user.png"width="30px" alt=""> Dwayne</td>
-                        <td>0</td>
-                        <td>3</td>
-                    </tr>
-                    <tr>
-                        <td>15</td>
-                        <td><img class="rounded-bottom rounded"src="assets/user.png"width="30px" alt=""> Tony</td>
-                        <td>3</td>
-                        <td>9</td>
-                    </tr>
-                    <tr>
-                        <td>16</td>
-                        <td><img class="rounded-bottom rounded"src="assets/user.png"width="30px" alt=""> Rohit</td>
-                        <td>4</td>
-                        <td>7</td>
-                    </tr>
-                    <tr>
-                        <td>17</td>
-                        <td><img class="rounded-bottom rounded"src="assets/user.png"width="30px" alt=""> Ali</td>
-                        <td>1</td>
-                        <td>5</td>
-                    </tr>
-                    <tr>
-                        <td>18</td>
-                        <td><img class="rounded-bottom rounded"src="assets/user.png"width="30px" alt=""> Dwayne</td>
-                        <td>0</td>
-                        <td>3</td>
-                    </tr>
-                    </tr>
-                        <td>19</td>
-                        <td><img class="rounded-bottom rounded"src="assets/user.png"width="30px" alt=""> Billy</td>
-                        <td>2</td>
-                        <td>13</td>
-                    </tr>
-                    <tr>
-                        <td>20</td>
-                        <td><img class="rounded-bottom rounded"src="assets/user.png"width="30px" alt=""> Tony</td>
-                        <td>3</td>
-                        <td>9</td>
-                    </tr>
-                    <tr>
-                        <td>21</td>
-                        <td><img class="rounded-bottom rounded"src="assets/user.png"width="30px" alt=""> Rohit</td>
-                        <td>4</td>
-                        <td>7</td>
-                    </tr>
-                    <tr>
-                        <td>22</td>
-                        <td><img class="rounded-bottom rounded"src="assets/user.png"width="30px" alt=""> Ali</td>
-                        <td>1</td>
-                        <td>5</td>
-                    </tr>
-                    <tr>
-                        <td>23</td>
-                        <td><img class="rounded-bottom rounded"src="assets/user.png"width="30px" alt=""> Dwayne</td>
-                        <td>0</td>
-                        <td>3</td>
-                    </tr>
-                    <tr>
-                        <td>24</td>
-                        <td><img class="rounded-bottom rounded"src="assets/user.png"width="30px" alt=""> Tony</td>
-                        <td>3</td>
-                        <td>9</td>
-                    </tr>
-                    <tr>
-                        <td>26</td>
-                        <td><img class="rounded-bottom rounded"src="assets/user.png"width="30px" alt="">  Adam</td>
-                        <td>6</td>
-                        <td>17</td>
-                    </tr>
-                </tbody>
+                        </tr>
+                        <tr>
+                            <td>11</td>
+                            <td><img class="rounded-bottom rounded" src="assets/pfp6.jpg" width="30px" alt=""> Tony</td>
+                            <td>3</td>
+                            <td>9</td>
+                        </tr>
+                        <tr>
+                            <td>12</td>
+                            <td><img class="rounded-bottom rounded" src="assets/pfp5.jpg" width="30px" alt=""> Rohit</td>
+                            <td>4</td>
+                            <td>7</td>
+                        </tr>
+                        <tr>
+                            <td>13</td>
+                            <td><img class="rounded-bottom rounded" src="assets/pfp8.jpg" width="30px" alt=""> Ali</td>
+                            <td>1</td>
+                            <td>5</td>
+                        </tr>
+                        <tr>
+                            <td>14</td>
+                            <td><img class="rounded-bottom rounded" src="assets/pfp9.jpg" width="30px" alt=""> Dwayne</td>
+                            <td>0</td>
+                            <td>3</td>
+                        </tr>
+                        <tr>
+                            <td>15</td>
+                            <td><img class="rounded-bottom rounded" src="assets/pfp4.jpg" width="30px" alt=""> Tony</td>
+                            <td>3</td>
+                            <td>9</td>
+                        </tr>
+                    </tbody>
                 </table>
             </div>
             <div class="col-sm">
                 <table class="table table-hover table-sm table-bordered ">
-                <thead>
-                    <tr>
-                    <th>S.no.</th>
-                    <th style="width: 300px;">Agent Name</th>
-                    <th>Daily Booking</th>
-                    <th>Accumulative Booking</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>1</td>
-                        <td><img class="rounded-bottom rounded"src="assets/pfp7.jpg"width="30px" alt=""> John</td>
-                        <td>4</td>
-                        <td>15</td>
-                    </tr>
-                        <td>2</td>
-                        <td><img class="rounded-bottom rounded"src="assets/pfp3.jpg"width="30px" alt=""> Billy</td>
-                        <td>2</td>
-                        <td>13</td>
-                    </tr>
-                    <tr>
-                        <td>3</td>
-                        <td><img class="rounded-bottom rounded"src="assets/pfp4.jpg"width="30px" alt=""> Tony</td>
-                        <td>3</td>
-                        <td>9</td>
-                    </tr>
-                    <tr>
-                        <td>4</td>
-                        <td><img class="rounded-bottom rounded"src="assets/pfp5.jpg"width="30px" alt=""> Rohit</td>
-                        <td>4</td>
-                        <td>7</td>
-                    </tr>
-                    <tr>
-                        <td>5</td>
-                        <td><img class="rounded-bottom rounded"src="assets/pfp6.jpg"width="30px" alt=""> Ali</td>
-                        <td>1</td>
-                        <td>5</td>
-                    </tr>
-                    <tr>
-                        <td>6</td>
-                        <td><img class="rounded-bottom rounded"src="assets/pfp7.jpg"width="30px" alt=""> Dwayne</td>
-                        <td>0</td>
-                        <td>3</td>
-                    </tr>
-                    <tr>
-                        <td>7</td>
-                        <td><img class="rounded-bottom rounded"src="assets/pfp8.jpg"width="30px" alt=""> Rohn</td>
-                        <td>8</td>
-                        <td>19</td>
+                    <thead>
+                        <tr>
+                            <th>S.no.</th>
+                            <th style="width: 300px;">Agent Name</th>
+                            <th>Daily Booking</th>
+                            <th>Total Booking</th>
                         </tr>
-                    <tr>
-                    <tr>
-                        <td>8</td>
-                        <td><img class="rounded-bottom rounded"src="assets/pfp9.jpg"width="30px" alt=""> Adam</td>
-                        <td>6</td>
-                        <td>17</td>
-                    </tr>
-                    <tr>
-                        <td>9</td>
-                        <td><img class="rounded-bottom rounded"src="assets/pfp1.jpg"width="30px" alt=""> John</td>
-                        <td>4</td>
-                        <td>15</td>
-                    </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td><img class="rounded-bottom rounded" src="assets/pfp7.jpg" width="30px" alt=""> John</td>
+                            <td>4</td>
+                            <td>15</td>
+                        </tr>
+                        <td>2</td>
+                        <td><img class="rounded-bottom rounded" src="assets/pfp3.jpg" width="30px" alt=""> Billy</td>
+                        <td>2</td>
+                        <td>13</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td><img class="rounded-bottom rounded" src="assets/pfp4.jpg" width="30px" alt=""> Tony</td>
+                            <td>3</td>
+                            <td>9</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td><img class="rounded-bottom rounded" src="assets/pfp5.jpg" width="30px" alt=""> Rohit</td>
+                            <td>4</td>
+                            <td>7</td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td><img class="rounded-bottom rounded" src="assets/pfp6.jpg" width="30px" alt=""> Ali</td>
+                            <td>1</td>
+                            <td>5</td>
+                        </tr>
+                        <tr>
+                            <td>6</td>
+                            <td><img class="rounded-bottom rounded" src="assets/pfp7.jpg" width="30px" alt=""> Dwayne</td>
+                            <td>0</td>
+                            <td>3</td>
+                        </tr>
+                        <tr>
+                            <td>7</td>
+                            <td><img class="rounded-bottom rounded" src="assets/pfp8.jpg" width="30px" alt=""> Rohn</td>
+                            <td>8</td>
+                            <td>19</td>
+                        </tr>
+                        <tr>
+                        <tr>
+                            <td>8</td>
+                            <td><img class="rounded-bottom rounded" src="assets/pfp9.jpg" width="30px" alt=""> Adam</td>
+                            <td>6</td>
+                            <td>17</td>
+                        </tr>
+                        <tr>
+                            <td>9</td>
+                            <td><img class="rounded-bottom rounded" src="assets/pfp1.jpg" width="30px" alt=""> John</td>
+                            <td>4</td>
+                            <td>15</td>
+                        </tr>
                         <td>10</td>
-                        <td><img class="rounded-bottom rounded"src="assets/pfp3.jpg"width="30px" alt=""> Billy</td>
+                        <td><img class="rounded-bottom rounded" src="assets/pfp3.jpg" width="30px" alt=""> Billy</td>
                         <td>2</td>
                         <td>13</td>
-                    </tr>
-                    <tr>
-                        <td>11</td>
-                        <td><img class="rounded-bottom rounded"src="assets/pfp6.jpg"width="30px" alt=""> Tony</td>
-                        <td>3</td>
-                        <td>9</td>
-                    </tr>
-                    <tr>
-                        <td>12</td>
-                        <td><img class="rounded-bottom rounded"src="assets/pfp5.jpg"width="30px" alt=""> Rohit</td>
-                        <td>4</td>
-                        <td>7</td>
-                    </tr>
-                    <tr>
-                        <td>13</td>
-                        <td><img class="rounded-bottom rounded"src="assets/pfp8.jpg"width="30px" alt=""> Ali</td>
-                        <td>1</td>
-                        <td>5</td>
-                    </tr>
-                    <tr>
-                        <td>14</td>
-                        <td><img class="rounded-bottom rounded"src="assets/pfp9.jpg"width="30px" alt=""> Dwayne</td>
-                        <td>0</td>
-                        <td>3</td>
-                    </tr>
-                    <tr>
-                        <td>15</td>
-                        <td><img class="rounded-bottom rounded"src="assets/pfp4.jpg"width="30px" alt=""> Tony</td>
-                        <td>3</td>
-                        <td>9</td>
-                    </tr>
-                    <tr>
-                        <td>16</td>
-                        <td><img class="rounded-bottom rounded"src="assets/pfp7.jpg"width="30px" alt=""> Rohit</td>
-                        <td>4</td>
-                        <td>7</td>
-                    </tr>
-                    <tr>
-                        <td>17</td>
-                        <td><img class="rounded-bottom rounded"src="assets/pfp1.jpg"width="30px" alt=""> Ali</td>
-                        <td>1</td>
-                        <td>5</td>
-                    </tr>
-                    <tr>
-                        <td>18</td>
-                        <td><img class="rounded-bottom rounded"src="assets/pfp3.jpg"width="30px" alt=""> Dwayne</td>
-                        <td>0</td>
-                        <td>3</td>
-                    </tr>
-                    </tr>
-                        <td>19</td>
-                        <td><img class="rounded-bottom rounded"src="assets/pfp3.jpg"width="30px" alt=""> Billy</td>
+                        </tr>
+                        <tr>
+                            <td>11</td>
+                            <td><img class="rounded-bottom rounded" src="assets/pfp6.jpg" width="30px" alt=""> Tony</td>
+                            <td>3</td>
+                            <td>9</td>
+                        </tr>
+                        <tr>
+                            <td>12</td>
+                            <td><img class="rounded-bottom rounded" src="assets/pfp5.jpg" width="30px" alt=""> Rohit</td>
+                            <td>4</td>
+                            <td>7</td>
+                        </tr>
+                        <tr>
+                            <td>13</td>
+                            <td><img class="rounded-bottom rounded" src="assets/pfp8.jpg" width="30px" alt=""> Ali</td>
+                            <td>1</td>
+                            <td>5</td>
+                        </tr>
+                        <tr>
+                            <td>14</td>
+                            <td><img class="rounded-bottom rounded" src="assets/pfp9.jpg" width="30px" alt=""> Dwayne</td>
+                            <td>0</td>
+                            <td>3</td>
+                        </tr>
+                        <tr>
+                            <td>15</td>
+                            <td><img class="rounded-bottom rounded" src="assets/pfp4.jpg" width="30px" alt=""> Tony</td>
+                            <td>3</td>
+                            <td>9</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="col-sm">
+                <table class="table table-hover table-sm table-bordered ">
+                    <thead>
+                        <tr>
+                            <th>S.no.</th>
+                            <th style="width: 300px;">Agent Name</th>
+                            <th>Daily Booking</th>
+                            <th>Total Booking</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td><img class="rounded-bottom rounded" src="assets/pfp7.jpg" width="30px" alt=""> John</td>
+                            <td>4</td>
+                            <td>15</td>
+                        </tr>
+                        <td>2</td>
+                        <td><img class="rounded-bottom rounded" src="assets/pfp3.jpg" width="30px" alt=""> Billy</td>
                         <td>2</td>
                         <td>13</td>
-                    </tr>
-                    <tr>
-                        <td>20</td>
-                        <td><img class="rounded-bottom rounded"src="assets/pfp6.jpg"width="30px" alt=""> Tony</td>
-                        <td>3</td>
-                        <td>9</td>
-                    </tr>
-                    <tr>
-                        <td>21</td>
-                        <td><img class="rounded-bottom rounded"src="assets/pfp5.jpg"width="30px" alt=""> Rohit</td>
-                        <td>4</td>
-                        <td>7</td>
-                    </tr>
-                    <tr>
-                        <td>22</td>
-                        <td><img class="rounded-bottom rounded"src="assets/pfp8.jpg"width="30px" alt=""> Ali</td>
-                        <td>1</td>
-                        <td>5</td>
-                    </tr>
-                    <tr>
-                        <td>23</td>
-                        <td><img class="rounded-bottom rounded"src="assets/pfp9.jpg"width="30px" alt=""> Dwayne</td>
-                        <td>0</td>
-                        <td>3</td>
-                    </tr>
-                    <tr>
-                        <td>24</td>
-                        <td><img class="rounded-bottom rounded"src="assets/pfp4.jpg"width="30px" alt=""> Tony</td>
-                        <td>3</td>
-                        <td>9</td>
-                    </tr>
-                    <tr>
-                        <td>26</td>
-                        <td><img class="rounded-bottom rounded"src="assets/pfp1.jpg"width="30px" alt="">  Adam</td>
-                        <td>6</td>
-                        <td>17</td>
-                    </tr>
-                </tbody>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td><img class="rounded-bottom rounded" src="assets/pfp4.jpg" width="30px" alt=""> Tony</td>
+                            <td>3</td>
+                            <td>9</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td><img class="rounded-bottom rounded" src="assets/pfp5.jpg" width="30px" alt=""> Rohit</td>
+                            <td>4</td>
+                            <td>7</td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td><img class="rounded-bottom rounded" src="assets/pfp6.jpg" width="30px" alt=""> Ali</td>
+                            <td>1</td>
+                            <td>5</td>
+                        </tr>
+                        <tr>
+                            <td>6</td>
+                            <td><img class="rounded-bottom rounded" src="assets/pfp7.jpg" width="30px" alt=""> Dwayne</td>
+                            <td>0</td>
+                            <td>3</td>
+                        </tr>
+                        <tr>
+                            <td>7</td>
+                            <td><img class="rounded-bottom rounded" src="assets/pfp8.jpg" width="30px" alt=""> Rohn</td>
+                            <td>8</td>
+                            <td>19</td>
+                        </tr>
+                        <tr>
+                        <tr>
+                            <td>8</td>
+                            <td><img class="rounded-bottom rounded" src="assets/pfp9.jpg" width="30px" alt=""> Adam</td>
+                            <td>6</td>
+                            <td>17</td>
+                        </tr>
+                        <tr>
+                            <td>9</td>
+                            <td><img class="rounded-bottom rounded" src="assets/pfp1.jpg" width="30px" alt=""> John</td>
+                            <td>4</td>
+                            <td>15</td>
+                        </tr>
+                        <td>10</td>
+                        <td><img class="rounded-bottom rounded" src="assets/pfp3.jpg" width="30px" alt=""> Billy</td>
+                        <td>2</td>
+                        <td>13</td>
+                        </tr>
+                        <tr>
+                            <td>11</td>
+                            <td><img class="rounded-bottom rounded" src="assets/pfp6.jpg" width="30px" alt=""> Tony</td>
+                            <td>3</td>
+                            <td>9</td>
+                        </tr>
+                        <tr>
+                            <td>12</td>
+                            <td><img class="rounded-bottom rounded" src="assets/pfp5.jpg" width="30px" alt=""> Rohit</td>
+                            <td>4</td>
+                            <td>7</td>
+                        </tr>
+                        <tr>
+                            <td>13</td>
+                            <td><img class="rounded-bottom rounded" src="assets/pfp8.jpg" width="30px" alt=""> Ali</td>
+                            <td>1</td>
+                            <td>5</td>
+                        </tr>
+                        <tr>
+                            <td>14</td>
+                            <td><img class="rounded-bottom rounded" src="assets/pfp9.jpg" width="30px" alt=""> Dwayne</td>
+                            <td>0</td>
+                            <td>3</td>
+                        </tr>
+                        <tr>
+                            <td>15</td>
+                            <td><img class="rounded-bottom rounded" src="assets/pfp4.jpg" width="30px" alt=""> Tony</td>
+                            <td>3</td>
+                            <td>9</td>
+                        </tr>
+                    </tbody>
                 </table>
             </div>
         </div>
     </div>
 
 </body>
+
 </html>
