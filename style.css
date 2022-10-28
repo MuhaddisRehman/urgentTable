@@ -63,8 +63,8 @@ td{
     justify-content: space-around;
     align-items: center;
 }
-.topDetails p{
-    font-size: 18px;
+.topDetails div p{
+    font-size: 24px !important;
 }
 .leaderboard{
     border-radius: 25px;
